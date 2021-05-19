@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Basketball_score</string>
+    <string name="three_point">+3 points</string>
+    <string name="two_point">+2 points</string>
+    <string name="one_point">+1 freethro</string>
+    <string name="reset">Reset</string>
+    <string name="winner">Winner</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="score_0">0</string>
+    <string name="hint">Click Winner for Result</string>
+
+</resources>

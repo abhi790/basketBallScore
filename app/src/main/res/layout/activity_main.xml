@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECA9A9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECA9A9"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/teams_specification"
+                    android:text="@string/teamA"
+                    app:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/leftScore"
+                    style="@style/score_specification" />
+
+                <Button
+                    android:id="@+id/lPlus3"
+                    style="@style/dimension"
+                    android:onClick="lIncrement3"
+                    android:text="@string/three_point" />
+
+                <Button
+                    android:id="@+id/lPlus2"
+                    style="@style/dimension"
+                    android:onClick="lIncrement2"
+                    android:text="@string/two_point" />
+
+                <Button
+                    android:id="@+id/lThro"
+                    style="@style/dimension"
+                    android:onClick="lIncrement1"
+                    android:text="@string/one_point" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="#BF1010" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/teams_specification"
+                    android:text="@string/teamB"
+                    app:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/rightScore"
+                    style="@style/score_specification" />
+
+                <Button
+                    android:id="@+id/rPlus3"
+                    style="@style/dimension"
+                    android:onClick="rIncrement3"
+                    android:text="@string/three_point" />
+
+                <Button
+                    android:id="@+id/rPlus2"
+                    style="@style/dimension"
+                    android:onClick="rIncrement2"
+                    android:text="@string/two_point" />
+
+                <Button
+                    android:id="@+id/rThro"
+                    style="@style/dimension"
+                    android:onClick="rIncrement1"
+                    android:text="@string/one_point" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Reset"
+                style="@style/reset_result"
+                android:onClick="reset"
+                android:text="@string/reset" />
+
+            <Button
+                android:id="@+id/winner"
+                style="@style/reset_result"
+                android:onClick="winner"
+                android:text="@string/winner" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="@string/hint"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
+
